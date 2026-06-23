@@ -1,0 +1,84 @@
+* {
+    margin: 0;                /* Remove margens externas padrão do navegador */
+    padding: 0;               /* Remove preenchimentos internos padrão */
+    box-sizing: border-box;   /* Essencial: inclui bordas e padding no cálculo do tamanho total */
+}
+
+/* CONFIGURAÇÃO DE ALTURA 
+   Garantimos que o conteúdo ocupe a altura total da tela, permitindo que o 
+   Flexbox centralize os itens verticalmente.
+*/
+html, body {
+    height: 100%;
+}
+
+/* ESTILIZAÇÃO DO BODY 
+   O body funciona como nosso "contêiner pai" principal.
+*/
+body {
+    background-color: #240707;       /* Define a cor de fundo do site */
+    font-family: "Inter", sans-serif; /* Define a fonte (ou fontes alternativas) */
+    display: flex;                   /* Ativa o modo de layout Flexbox */
+    flex-direction: column;          /* Empilha os elementos um abaixo do outro */
+    align-items: center;             /* Centraliza os elementos horizontalmente */
+    justify-content: center;         /* Centraliza os elementos verticalmente */
+}
+
+/* ESTILIZAÇÃO DA IMAGEM 
+*/
+img {
+    width: 250px;                    /* Largura fixa */
+    height: 250px;                   /* Altura fixa */
+    object-fit: cover;               /* Faz a imagem preencher o espaço sem distorcer, cortando o excesso */
+    border-radius: 50%;              /* Com 50%, qualquer quadrado se torna um círculo perfeito */
+}
+
+/* TIPOGRAFIA (Títulos e Parágrafos)
+*/
+h1, p {
+    color: #FFFFFF;                  /* Cor branca para contrastar com o fundo escuro */
+    text-align: center;              /* Alinha o texto ao centro */
+}
+
+h1 {
+    font-size: 40px;                 /* Tamanho da fonte */
+    font-weight: 400;                /* Peso da fonte (espessura) */
+    text-transform: uppercase;       /* Força letras maiúsculas para dar ênfase */
+    margin-top: auto;                /* Espaço acima do título */
+    margin-bottom: auto;              /* Espaço abaixo do título */
+}
+
+p {
+    font-size: 24px;
+    font-weight: 200;                /* Fonte mais fina para o parágrafo */
+    margin-bottom: 32px;
+    max-width: 40ch;                 /* Limita a largura a 40 caracteres (melhora a legibilidade) */
+}
+
+/* LISTAS E BOTÕES 
+*/
+li {
+    list-style: none;                /* Remove o marcador (pontinho) da lista */
+    margin-bottom: 14px;             /* Espaço entre os links */
+}
+
+a {
+    background-color: #bed50b;       /* Cor de destaque do botão */
+    text-decoration: none;           /* Remove o sublinhado padrão de links */
+    color: #240707;                  /* Cor do texto do botão (contrastando com o fundo) */
+    border-radius: 16px;             /* Bordas arredondadas nos cantos */
+    width: 100%;
+    height: 48px;
+    display: flex;                   /* Usado aqui para alinhar o texto dentro do botão */
+    align-items: center;             /* Centraliza o texto verticalmente dentro do botão */
+    justify-content: center;         /* Centraliza o texto horizontalmente dentro do botão */
+    font-weight: 700;                /* Deixa o texto em negrito */
+    transition: background-color 0.3s ease; /* Transição de 300ms na troca de cor */
+}
+
+/* PSEUDO-CLASSE HOVER
+   Define como o elemento deve se comportar ao passar o mouse sobre ele.
+*/
+a:hover { 
+    background-color: #FFFFFF;       /* Muda o fundo para branco quando o mouse toca o link */
+}
