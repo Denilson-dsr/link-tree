@@ -16,7 +16,7 @@ html, body {
    O body funciona como nosso "contêiner pai" principal.
 */
 body {
-    background-color: #240707;       /* Define a cor de fundo do site */
+    background-color: #0c0c0c;       /* Define a cor de fundo do site */
     font-family: "Inter", sans-serif; /* Define a fonte (ou fontes alternativas) */
     display: flex;                   /* Ativa o modo de layout Flexbox */
     flex-direction: column;          /* Empilha os elementos um abaixo do outro */
@@ -63,7 +63,7 @@ li {
 }
 
 a {
-    background-color: #bed50b;       /* Cor de destaque do botão */
+    background-color: #F8BB25;       /* Cor de destaque do botão */
     text-decoration: none;           /* Remove o sublinhado padrão de links */
     color: #240707;                  /* Cor do texto do botão (contrastando com o fundo) */
     border-radius: 16px;             /* Bordas arredondadas nos cantos */
